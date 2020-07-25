@@ -1,0 +1,224 @@
+/* Tipografías */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px; 
+}
+
+h2{
+    font-weight: 700;
+}
+
+li, a {
+    text-decoration: none;
+    color: #000; 
+    font-size: 16px;
+    list-style: none;
+}
+
+/* Resto de estilos de la página */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    align-items:center; 
+    /* padding: 30px 10%;  */
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    background: #fff;
+}
+
+/* nav{
+    background: #fff;
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-around;
+} */
+
+.navegacion{
+    display: flex;
+}
+
+.botonesmenu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-boton{
+    background:#fff; 
+    padding: 10px 30px;  
+    display: none; 
+    border: 2px solid #f4f6ff; 
+}
+
+.espaciomenu{
+    display: flex;
+    flex: 5 1 auto;
+    flex-wrap: wrap;
+}
+
+.nav-inicio{
+    background:#fff; 
+    padding: 30px 30px;  
+    text-decoration: none; 
+    border-radius: 5px; 
+}
+
+.nav-inicio:hover{
+    background: #364f6b;
+    color: #fff; 
+}
+
+.listamenu{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 650px;
+
+}
+
+
+.nav-enlace{
+    background:#fff; 
+    padding: 10px 30px;  
+    display: inline-block; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    flex-wrap: wrap;
+ 
+}
+
+.nav-enlace-especifico{
+    background:#fff; 
+    padding: 10px 30px;  
+    display: inline-block; 
+    text-decoration: none; 
+    border-radius: 5px;
+    flex-wrap: wrap; 
+}
+
+.contacto{
+    background: #fc5185; 
+    color: #fff; 
+    flex-wrap: wrap;
+}
+
+.contacto:hover{
+    background: #fb044e; 
+}
+
+.nav-enlace:hover{
+    background: #364f6b;
+    color: #fff; 
+    border-radius: 5px; 
+}
+
+
+.precios{
+    display: flex; 
+    flex-wrap: wrap;
+    text-align: center; 
+    background: #f0f0f0;
+    padding-bottom: 20px;
+    justify-content: center;
+    padding-top: 90px;
+ 
+}
+
+.promocioncursos{
+    background: #fff;
+    color: #000000; 
+    margin: 20px; 
+    padding: 10px; 
+    border-radius: 5px; 
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.18);
+    max-width: 500px; 
+    display: block;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.precio{
+    font-size: 50px;
+    color: #43dde6; 
+}
+
+.btn-comprar{
+    background: #fc5185; 
+    display: block; 
+    padding: 10px; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transform: translate(-50%, -100%);
+    left:50%;
+    top: 100%; 
+    position: absolute;
+    width: 250px;
+    margin-top: -14px;
+}
+
+.seccion-boton-info{
+    background: #f0f0f0;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.boton-info{
+    background:#fc5185;
+    color: #fff; 
+    border-radius: 5px;
+    max-height: 50px;
+    margin-top: 25px;
+    font-weight: bold;
+    border: none;
+}
+
+
+button:active{
+    background:#c70039;
+}
+
+.btn-comprar:hover{
+    background:  #FD3F3F; 
+}
+
+.boton-info:hover{
+    background: #FD3F3F;
+}
+
+/* Los media para el diseño responsive */
+
+/* Con esto le digo que entre 0 y 700 px se comporte de una determinada manera y si no, de la forma predeterminada que ya le he dicho yo con CSS */
+@media (max-width: 700px){
+    nav{
+        flex-direction: column;
+    }
+
+    .nav-boton{
+        display: inline-block; 
+    }
+
+    .nav-enlace{
+        margin: 10px 0px; 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; 
+    }
+
+    .nav-enlace-especifico{
+        margin: 10px 0px; 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; 
+    }
+
+    .desaparece{
+        display: none; 
+    }
+
+}
+
